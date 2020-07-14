@@ -225,8 +225,14 @@ class DoublyLinkedList:
         else:
             current = self.head
             while current is not None:
-                arr.append(current)
+                arr.append(current.value)
                 current = current.next
 
-        for i in range(len(arr)):
-            print(arr[i].value)
+        print(arr)
+
+
+ll = DoublyLinkedList(ListNode(1))
+ll.add_to_tail(4)
+ll.add_to_tail(5)
+ll.move_to_end(ll.head)
+ll.print_list()
