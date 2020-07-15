@@ -68,6 +68,10 @@ class BSTNode:
 
         return max_value
 
+        # Solution 2
+
+        # return self.right.get_max() if self.right else self.value
+
     # Call the function `fn` on the value of each node
     def for_each(self, fn):
 
